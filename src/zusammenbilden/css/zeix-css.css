@@ -1,0 +1,471 @@
+html, body  {
+	height: 100%;
+	padding: 0px;
+	margin:0px;
+}
+
+html {
+	overflow-y: scroll;
+}
+body {
+	color:#ffffff;
+	font-size: 13px;
+	font-family: 'open_sansregular', Verdana, 'Sans serif';
+}
+html.ie8 body {
+	background: #000000 url("../img/lichter_bg_1920.png") no-repeat 0 0 fixed; 
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -40px;
+	padding:0 10px;
+} 
+.a11y {
+  position: absolute !important;
+  height: 1px;
+  width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.a11y:focus {
+  top: 12px;
+  left: 12px;
+  height: auto;
+  width: auto;
+  clip: auto;
+}
+a {
+	text-decoration: underline;
+	color:#ffffff;
+}
+a:hover, a:active, a:focus {
+	text-decoration: underline;
+	color:#F1f16D;
+}
+#body {
+	margin-top:15px;
+	margin-top:35px\9;
+	position: relative;
+	z-index:1000;
+}
+.header {
+	display: inline-block;
+	width:100%;
+	height:240px;
+	padding-top:30px;
+}
+.header h3 {
+	float: left;
+}
+.headerline {
+	margin-top: 30px;
+	display: block;
+	width: 100%;
+}
+.headerblock {
+	float:left;
+	width:50%;
+}
+
+img.logo-fhnw {
+		height:41px;
+		width:179px;
+	}
+.social-line {
+	margin-top:51px;
+}
+.links {
+	/* float: left; */
+}
+.links a {
+	display: block;
+	margin-bottom: 10px;
+}
+.info-text {
+	float: right;
+	width: 600px;
+	display: block;
+	font-size:14px;
+}
+.content {
+	position: relative;
+}
+.row-fluid .span12 .span4 .info {
+	background-color: #000000;
+	padding: 10px;
+	width: 70%;
+}
+.row-fluid .linie {
+	border: none;
+	border-top: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	width:70%;
+	margin:10px 0;
+	border-top: 0px solid #FFFFFF\9;
+	background-color: #FFFFFF\9;
+	height: 1px\9;
+	margin:0px 0 10px 0\9;
+	display: inline-block\9;
+}
+.row-fluid .span12 .info h3 {
+	font-family: 'open_sanslight' , Verdana, 'Sans serif';
+	font-size: 13px;
+	line-height: 0px;
+	text-decoration: none;
+	margin: 20px 0;
+	margin: 20px 0 20px 0\9;
+	font-weight: normal;
+} 
+.row-fluid .span2 h3, 
+.row-fluid .span3 h3 {
+	font-family: 'open_sanslight' , Verdana, 'Sans serif';
+	font-size: 13px;
+	line-height: 0px;
+	text-decoration: none;
+	margin: 20px 0;
+} 
+
+/*767px*/
+.row-fluid .span12 .info {
+	background-color: #000000;
+	padding: 10px;
+	width: 100%;
+}
+.row-fluid .span12 .info a {
+	display: inline-block;
+}
+.container-fluid .row-fluid [class*="span"]:first-child {
+	margin-left:0!important;
+}
+
+.person-content {
+	background-color: #000;
+	padding:10px;
+}
+.person-content p {
+	min-height: 40px;
+}
+
+.videorow {
+	position: relative;
+}
+.videocontainer {
+	display:block;
+	position: relative;
+	background-color:transparent;
+	height:100%;
+	width:100%;
+	float:left;
+}
+.videocontainer.active{
+	margin-bottom: 30px;
+	border-bottom: 1px solid #ffc;
+	padding:20px 0 30px 0;
+}
+.row-fluid .span9 {
+	cursor: pointer;
+}
+
+
+.hide {
+	display: none;
+}
+
+img.claim {
+	float: right;
+}
+ 
+.close-video {
+    background-color: #000000;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    top: -40px;
+    z-index: 100;
+}
+
+.impressum {
+	background-color: #000000;
+	padding: 10px;
+}
+.back {
+	background-color: #000000;
+	padding:10px;
+	float: left;
+}
+
+
+.row-fluid .span2 {
+	background-color: #000000;
+	cursor: pointer;
+	min-height:200px;
+	margin-bottom:30px;
+	position: relative;
+}
+.row-fluid .span2 .layer.active {
+	background: url('../img/bg-active.png') 0px 0px repeat;
+	height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.fb_edge_widget_with_comment {
+	float: left;
+	margin-right:30px;
+}
+
+
+#push, #footer {
+    height: 35px;
+}
+#footer .foot-content {
+	background-color: #000;
+	opacity: 0.5;
+	color: #fff;
+	padding:5px;
+	display: inline-block;
+	float: right;
+}
+#footer .foot-content a {
+	padding:0 5px;
+}
+
+.video-js {
+	width: 100%;
+	height:100%;
+}
+.vjs-poster, .image-poster { 
+	
+	display: block;
+	position: relative;
+	z-index: 1000;
+}
+#video {
+	cursor: pointer;
+	width:100%\9;
+	height:100%\9;
+	z-index: 1;
+	/*
+left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+*/
+}
+html.ie9 .ie9videoposter {
+	position:relative;
+	left:0; top:0;
+	display:block;	
+	height:100%;
+	width: 100%;
+	cursor: pointer;	
+}
+.ie9videoposter {
+	display:none;		
+}
+html.ie9 #video {
+	position: absolute;
+	z-index: 1;
+	left:0px;
+	top:0px;
+}
+#ie9button {
+	display: none;
+}
+html.ie9 #ie9button {
+	position: relative;
+	z-index: 1000;
+	left:0px;
+	top:370px;
+	display: inline-block;
+	height:20px;
+	width:30px;
+	cursor: pointer;
+	padding:0px 3px;
+	border:1px solid #eeeeee;
+}
+
+#video:focus {
+	outline: 0;
+}
+
+div.facebook, div.twitter, div.add-one {
+	float:left;
+}
+#flashvideo {
+	float: right;
+}
+
+.firefox {
+	  display: none;
+}
+
+ @-moz-document url-prefix()
+{
+	.firefox {
+		display: block;
+	}
+	.otherbrowser {
+		display: none;
+	}
+}
+@media (min-width: 980px) {
+	body {
+		background: #000000 url("../img/lichter_bg_1920.png") no-repeat 0 0 fixed; 
+	}
+	.row-fluid .span2 {
+		width:18.29%;
+	}
+	.video-js {
+	width: 100%;
+	height:auto;
+	}
+}
+
+
+@media (max-width: 767px) {
+	body {
+		padding-right:0px;
+		background: #000000 url("../img/lichter_bg_980.png") no-repeat 20% 80px fixed;
+		background-size: 100%; 
+		}
+	[class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+		width:50%;
+		padding-right:20px;
+		float:left;
+		background-color: transparent;
+		/* margin-bottom:20px; */
+	}
+	.videocontainer .span12 {
+		width: 100%;
+	}
+	.row-fluid .span2 {
+		background-color: transparent;
+		margin-bottom:20px;
+	}
+	.info-text {
+		float: right;
+		width: 400px;
+		margin-top:30px;
+	}
+	.header {
+		height: 40px;
+		padding-top:10px;
+		height:100%;
+	}
+	img.claim {
+		margin-top:20px;
+	}
+
+	.person-content p {
+		min-height: 60px;
+	}
+	#footer {
+		margin-top: 20px;
+	}
+	#wrap {
+		padding:0 0px 0 20px;
+	}
+	img.claim, .socialline, .links {
+		display: none;
+	}
+	.social-line {
+		display: none;
+	}
+	.video-js {
+	height:auto;
+	width:100%;
+	}
+	.headerline {
+		display: none;
+	}
+	.infotext-phone {
+		background: url('../img/bg-infotext-off.png') no-repeat 0 7px;
+	    cursor: pointer;
+	    display: block;
+	    float: right;
+	    height: 18px;
+	    padding: 15px 0 15px 15px;
+	    position: relative;
+	    right: 0px;
+	    text-decoration: none;
+	    top: -10px;
+	    width: 73px;
+	}
+	.infotext-phone.active {
+		background: url('../img/bg-infotext-on.png') 0 7px no-repeat;
+	}
+	.headerline.active{
+		background-color: #000000;
+	    display: block;
+	    margin-left: -20px;
+	    margin-top: 10px;
+	    padding: 10px 20px 10px 0;
+	}
+	.headerline.active .headerblock .links,
+	.headerline.active .headerblock .info-text{
+		display:block;
+		padding-left:20px;
+	}
+	.info-text {
+    	margin-top: 30px;
+    	width: 250px;
+    	float: none;
+    }
+    .headerblock {
+    	float: none;
+    	width: 100%;
+    }
+    #body {
+	    margin-top:20px;
+	    display: block;
+    }
+    .close-video {
+	    right:10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.vjs-default-skin .vjs-big-play-button { 
+		display: none!important;
+	 }
+	
+	body {
+		background: #000000 url("../img/lichter_bg_768.png") no-repeat 20% 130px fixed; 
+		background-size: 100%;
+	}
+	#body {
+		margin-top:20px;
+	}
+	
+	.videocontainer .span4 {
+		background-color: #000000;
+	}
+	.videocontainer .span4 h3{ 
+		font-size: 14px;
+	}
+	.videocontainer .span3 p{
+		text-decoration: underline;
+	}
+	.header {
+		height: 100%;
+		
+	}
+	.info-text {
+		width:400px;
+	}
+	.row-fluid .span12 .info .linie {
+		width:20%;
+	}
+	.social-line {
+		margin-top:30px;
+		width:90%;
+	}
+	.video-js {
+	height:auto;
+	}
+}
