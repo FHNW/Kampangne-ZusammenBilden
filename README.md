@@ -1,7 +1,7 @@
-Kampangne-ZusammenBilden
-========================
+Image Kampangne Zusammen Bilden
+===============================
 
-Crossmediale Kampangne der FHNW
+Crossmediale Image Kampangne der Fachhochschule Nordwestschweiz.
 
 http://www.fhnw.ch/zusammenbilden
 
