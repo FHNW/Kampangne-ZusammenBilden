@@ -3,19 +3,6 @@
  */
 $(document).ready(function(){
 
-	var video = document.getElementById('video');
-	$('a.close-video').click(function(){
-		video.pause();
-		video.remove();
-		video.stop();
-		
-	});
-	/* jQuery('#video').trigger('pause'); */
-	
-		
-	
-	// Flyouts
-
 	$('.infotext-phone').click(function(e){
 		 $(".headerline, .infotext-phone").toggleClass('active');
 	});
@@ -240,22 +227,5 @@ $(document).ready(function(){
 	    	
       });
   }
-  	
-  	
 
-
-		/*
-if($('html').hasClass('ie9')) { 
-  		$("#video").click(function() {
-			$("img.ie9videoposter").css( "display", "none" );
-			$('#video').css( "display", "block" );
-			$('video')[0].pause();
-			return false;
-			});
-		};
-*/
-
-	
-  
- 
 });
