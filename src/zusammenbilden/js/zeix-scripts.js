@@ -76,6 +76,7 @@ $(document).ready(function(){
 				     
 		    		 $(".videorow").slideUp('slow');
 				     $("#video").remove();
+				     $(".elastic-video").remove();
 				     /*stop the video */
 		    		
 				     var video = document.getElementById('video');
@@ -154,6 +155,7 @@ $(document).ready(function(){
 		    		 
 				     $(".videorow").slideUp('slow');
 				     $("#video").remove();
+				     $(".elastic-video").remove();
 				     /*stop the video */
 		    		  var video = document.getElementById('video');
 			    		 video.pause();
@@ -214,6 +216,7 @@ $(document).ready(function(){
 		    		 $(".videorow").slideUp('slow');
 		    		 $("#video").hide();
 		    		 $("#video").remove();
+		    		 $(".elastic-video").remove();
 		    		 /*stop the video */
 		    		  var video = document.getElementById('video');
 			    		 video.pause();
