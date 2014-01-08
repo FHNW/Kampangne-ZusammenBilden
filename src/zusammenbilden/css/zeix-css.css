@@ -170,6 +170,7 @@ img.logo-fhnw {
 .row-fluid .span9 {
 	cursor: pointer;
 }
+<<<<<<< HEAD
 
 /*
 iframe {
@@ -178,6 +179,8 @@ iframe {
 	
 }
 */
+=======
+>>>>>>> 0296b7878aff2fcf76d4e402fed3694701cf31f4
 .elastic-video {
 	position: relative;
 	padding-bottom: 55%;
@@ -192,7 +195,10 @@ iframe {
 	width: 100%;
 	height: 100%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0296b7878aff2fcf76d4e402fed3694701cf31f4
 
 .hide {
 	display: none;

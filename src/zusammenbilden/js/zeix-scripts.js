@@ -3,8 +3,11 @@
  */
 $(document).ready(function(){
 
+<<<<<<< HEAD
 	// Flyouts
 
+=======
+>>>>>>> 0296b7878aff2fcf76d4e402fed3694701cf31f4
 	$('.infotext-phone').click(function(e){
 		 $(".headerline, .infotext-phone").toggleClass('active');
 	});
@@ -225,7 +228,10 @@ $(document).ready(function(){
 		    		 $(".videorow").slideUp('slow');
 		    		 $("#video").hide();
 		    		 $("#video").remove();
+<<<<<<< HEAD
 		    		 
+=======
+>>>>>>> 0296b7878aff2fcf76d4e402fed3694701cf31f4
 		    		 $(".elastic-video").remove();
 		    		 /*stop the video */
 		    		  var video = document.getElementById('video');
@@ -240,22 +246,5 @@ $(document).ready(function(){
 	    	
       });
   }
-  	
-  	
 
-
-		/*
-if($('html').hasClass('ie9')) { 
-  		$("#video").click(function() {
-			$("img.ie9videoposter").css( "display", "none" );
-			$('#video').css( "display", "block" );
-			$('video')[0].pause();
-			return false;
-			});
-		};
-*/
-
-	
-  
- 
 });
