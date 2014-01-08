@@ -3,17 +3,6 @@
  */
 $(document).ready(function(){
 
-	var video = document.getElementById('video');
-	$('a.close-video').click(function(){
-		video.pause();
-		video.remove();
-		video.stop();
-		
-	});
-	/* jQuery('#video').trigger('pause'); */
-	
-		
-	
 	// Flyouts
 
 	$('.infotext-phone').click(function(e){
@@ -32,7 +21,7 @@ $(document).ready(function(){
      		$(".videocontainer").removeClass('active');
      		
      		var id_person = $(this).attr("id");
-     		var a = parseInt(id_person.match(/\d/), 10);
+     		var a = parseInt(id_person.match(/\d+/), 10);
      		
      		switch (a) {
                 case 0:
@@ -51,6 +40,10 @@ $(document).ready(function(){
                 case 7:
                 case 8:
                 	var container = ('five');
+                    break;
+                case 9:
+                case 10:
+                	var container = ('six');
                     break;
                 default:
                    var container = ('six');
@@ -89,6 +82,7 @@ $(document).ready(function(){
 				     
 		    		 $(".videorow").slideUp('slow');
 				     $("#video").remove();
+				     $(".elastic-video").remove();
 				     /*stop the video */
 		    		
 				     var video = document.getElementById('video');
@@ -110,7 +104,7 @@ $(document).ready(function(){
      		$(".videocontainer").removeClass('active');
      		
      		var id_person = $(this).attr("id");
-     		var a = parseInt(id_person.match(/\d/), 10);
+     		var a = parseInt(id_person.match(/\d+/), 10);
      		
      		switch (a) {
      			case 0:
@@ -128,6 +122,9 @@ $(document).ready(function(){
                 case 8:
                 case 9:
                 	var container = ('five');
+                    break;
+                case 10:
+                	var container = ('seven');
                     break;
                 default:
                    var container = ('one');
@@ -167,6 +164,7 @@ $(document).ready(function(){
 		    		 
 				     $(".videorow").slideUp('slow');
 				     $("#video").remove();
+				     $(".elastic-video").remove();
 				     /*stop the video */
 		    		  var video = document.getElementById('video');
 			    		 video.pause();
@@ -187,7 +185,7 @@ $(document).ready(function(){
         	$(".videocontainer").removeClass('active');
         	
      		var id_person = $(this).attr("id");
-     		var a = parseInt(id_person.match(/\d/), 10);
+     		var a = parseInt(id_person.match(/\d+/), 10);
      		
      		var container = (a < 6 ? 'one' : 'five');
      		
@@ -227,6 +225,8 @@ $(document).ready(function(){
 		    		 $(".videorow").slideUp('slow');
 		    		 $("#video").hide();
 		    		 $("#video").remove();
+		    		 
+		    		 $(".elastic-video").remove();
 		    		 /*stop the video */
 		    		  var video = document.getElementById('video');
 			    		 video.pause();
