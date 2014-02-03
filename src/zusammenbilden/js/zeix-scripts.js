@@ -45,6 +45,10 @@ $(document).ready(function(){
                 case 10:
                 	var container = ('six');
                     break;
+                case 11:
+                case 12:
+                	var container = ('eight');
+                    break;
                 default:
                    var container = ('six');
             }
@@ -106,11 +110,11 @@ $(document).ready(function(){
      		var id_person = $(this).attr("id");
      		var a = parseInt(id_person.match(/\d+/), 10);
      		
-     		switch (a) {
-     			case 0:
-     			case 1:
-     			case 2:
-     			case 3:
+			     		switch (a) {
+			     			case 0:
+			     			case 1:
+			     			case 2:
+			     			case 3:
                     var container = ('one');
                     break;
                 case 4:
@@ -124,6 +128,8 @@ $(document).ready(function(){
                 	var container = ('five');
                     break;
                 case 10:
+                case 11:
+                case 12:
                 	var container = ('seven');
                     break;
                 default:
@@ -187,7 +193,32 @@ $(document).ready(function(){
      		var id_person = $(this).attr("id");
      		var a = parseInt(id_person.match(/\d+/), 10);
      		
-     		var container = (a < 6 ? 'one' : 'five');
+     		//var container = (a < 6 ? 'one' : 'five');
+     		
+			     		switch (a) {
+			     			case 0:
+			     			case 1:
+			     			case 2:
+			     			case 3:
+			     			case 4:
+			     			case 5:
+                    var container = ('one');
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                   var container = ('five');
+                    break;
+                case 11:
+                case 12:
+                	var container = ('eight');
+                    break;
+                default:
+                   var container = ('one');
+            }
+     		
      		
      		
      		/*Scrolling*/
@@ -225,7 +256,7 @@ $(document).ready(function(){
 		    		 $(".videorow").slideUp('slow');
 		    		 $("#video").hide();
 		    		 $("#video").remove();
-
+		    		 
 		    		 $(".elastic-video").remove();
 		    		 /*stop the video */
 		    		  var video = document.getElementById('video');
@@ -240,5 +271,22 @@ $(document).ready(function(){
 	    	
       });
   }
+  	
+  	
 
+
+		/*
+if($('html').hasClass('ie9')) { 
+  		$("#video").click(function() {
+			$("img.ie9videoposter").css( "display", "none" );
+			$('#video').css( "display", "block" );
+			$('video')[0].pause();
+			return false;
+			});
+		};
+*/
+
+	
+  
+ 
 });
