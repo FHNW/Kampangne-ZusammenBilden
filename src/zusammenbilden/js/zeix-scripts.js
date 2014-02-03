@@ -71,13 +71,15 @@ $(document).ready(function(){
      		
 			$('#person-' + a + ' .layer').addClass('active');
 			$(".videorow").slideUp('slow');
+			
 			$(".videorow").empty();
-	    	$("#video").remove();
+	    $("#video").remove();
+			
 			$(".videocontainer").removeClass('active');
 			
 	    	$(".videocontainer." + container).load(id_person + 'small.html', function(){
 		    	
-		    	$(".videocontainer." + container + " .videorow").slideDown('slow');
+		    	$(".videocontainer." + container).slideDown('slow');
 	    		$(".videocontainer." + container).addClass('active');
 		    	
 		    	$('a.close-video').click(function(e){
@@ -85,12 +87,13 @@ $(document).ready(function(){
 				     $('.layer').removeClass('active');
 				     
 		    		 $(".videorow").slideUp('slow');
+		    		 $("#video").hide();
 				     $("#video").remove();
 				     $(".elastic-video").remove();
 				     /*stop the video */
 		    		
 				     var video = document.getElementById('video');
-			    		 video.pause();
+			    		 //video.pause();
 			    		 video.stop();
 				     
 				     
@@ -133,7 +136,7 @@ $(document).ready(function(){
                 	var container = ('seven');
                     break;
                 default:
-                   var container = ('one');
+                   var container = ('eight');
             }
            
            /*Scrolling*/ 
@@ -154,14 +157,16 @@ $(document).ready(function(){
 			
 			$('#person-' + a + ' .layer').addClass('active');
 			$(".videorow").slideUp('slow');
+			
 			$(".videorow").empty();
-	    	$("#video").remove();
+	    $("#video").remove();
 			
 			$(".videocontainer").removeClass('active');
 	    	
 	    	$(".videocontainer." + container).load(id_person + 'medium.html', function(){
 	    		
-	    		$(".videocontainer." + container + " .videorow").slideDown('slow');
+	    		//$(".videocontainer." + container + " .videorow").slideDown('slow');
+	    		$(".videocontainer." + container).slideDown('slow');
 	    		$(".videocontainer." + container).addClass('active');
 		    			    	
 		    	$('a.close-video').click(function(e){
@@ -169,6 +174,7 @@ $(document).ready(function(){
 				     $('.layer').removeClass('active');
 		    		 
 				     $(".videorow").slideUp('slow');
+				     $("#video").hide();
 				     $("#video").remove();
 				     $(".elastic-video").remove();
 				     /*stop the video */
@@ -241,6 +247,7 @@ $(document).ready(function(){
 	    	
 	    	$(".videorow").empty();
 	    	$("#video").remove();
+	    	$(".videocontainer").removeClass('active');
 	    		    	
 	    	$(".videocontainer." + container).load(id_person + 'high.html', function(){
 		    	
@@ -256,8 +263,8 @@ $(document).ready(function(){
 		    		 $(".videorow").slideUp('slow');
 		    		 $("#video").hide();
 		    		 $("#video").remove();
-		    		 
 		    		 $(".elastic-video").remove();
+		    		 
 		    		 /*stop the video */
 		    		  var video = document.getElementById('video');
 			    		 video.pause();
